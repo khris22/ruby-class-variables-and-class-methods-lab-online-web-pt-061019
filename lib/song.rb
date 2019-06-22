@@ -31,7 +31,7 @@ class Song
   def self.genre_count
     binding.pry
     genre_count = {}
-    @@genres.map do |key|
+    @@genres.each do |key|
       if hash[key]
         hash[key] += 1
       else
