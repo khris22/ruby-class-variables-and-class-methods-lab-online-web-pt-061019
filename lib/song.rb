@@ -16,13 +16,12 @@ class Song
     @@artists << artist
   end
 
-    def count
-      @@count
-    end
+  def count
+    @@count
+  end
 
   def genres
     @@genres.uniq!
-
   end
 
   def artists
