@@ -41,6 +41,8 @@ class Song
     genre_count_hash
   end
 
+# different version with .map or .collect
+
   def artist_count
     artist_count_hash = {}
     @@artists.map {|key|
