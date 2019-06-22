@@ -44,10 +44,10 @@ class Song
   def artist_count
     artist_count_hash = {}
     @@artists.map {|key|
-      if hash[key]
-        hash[key] += 1
+      if artist_count_hash[key]
+        artist_count_hash[key] += 1
       else
-        hash[key] = 1
+        artist_count_hash[key] = 1
       end
     }
     artist_count_hash
