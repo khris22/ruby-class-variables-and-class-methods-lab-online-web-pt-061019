@@ -43,7 +43,7 @@ class Song
 
 # different version with .map or .collect
 
-  def artist_count
+  def self.artist_count
     artist_count_hash = {}
     @@artists.map {|key|
       if artist_count_hash[key]
