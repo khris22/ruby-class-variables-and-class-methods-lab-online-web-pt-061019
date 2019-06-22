@@ -28,7 +28,7 @@ class Song
     @@artists.uniq!
   end
 
-  def genre_count
+  def self.genre_count
     #binding.pry
     genre_count_hash = {}
     @@genres.map {|key|
