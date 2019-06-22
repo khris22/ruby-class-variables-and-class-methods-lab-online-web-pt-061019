@@ -30,15 +30,15 @@ class Song
 
   def self.genre_count
     #binding.pry
-    genre_count_hash = {}
-    @@genres.map {|key|
+    genre_count = {}
+    @@genres.map do |key|
       if hash[key]
         hash[key] += 1
       else
         hash[key] = 1
       end
-    }
-    genre_count_hash
+    end
+    genre_count
   end
 
   def artist_count
